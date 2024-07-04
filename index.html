@@ -1,38 +1,28 @@
 <!DOCTYPE html>
 <html>
 
-<!-- Mirrored from int.klcis.cc/iptv.html by HTTrack Website Copier/3.x [XR&CO'2017], Thu, 27 Jun 2024 02:34:37 GMT -->
+<!-- Mirrored from jeromelaliag.link/iptv/ by HTTrack Website Copier/3.x [XR&CO'2017], Fri, 21 Jun 2024 03:46:33 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
 	<meta charset="utf-8" />
 	<meta name="referrer" content="no-referrer" />
-	<meta http-equiv="Cache-Control" content="no-store" />
-	<meta http-equiv="Cache-Control" content="no-cache">	
-	<title>KLCiS - Free International IPTV Channels</title>
+
+	<title>PH IPTV</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="KLCiS provides free international IPTV links and live stream URLs. We re-share public IPTV channels and streams, ensuring all content is already publicly accessible. Explore a variety of formats including m3u8, ts, flv, rtsp, and rtmp.">
-	<meta name="keywords" content="free IPTV, international IPTV, live stream URLs, public IPTV channels, m3u8, ts, flv, rtsp, rtmp, IPTV links, IPTV streams, KLCiS">
+	<meta name="description" content="Stream your favorite TV m3u-playlist seamlessly with our feature-rich M3U IPTV browser app. It is completely free and easy to use!">
+	<meta name="keywords" content="IPTV, M3U, M3U8, M3U IPTV, M3U IPTV, Live, TV, Movie, Video, Smart, Smart TV, Playlist, Browser, Desktop, Mobile, Smartphone, free, easy, ad-free, CORS">
 	<meta name="author" content="Jaroslav Herber - Herber eDevelopment">
-	<link rel="canonical" href="../external.html?link=https://m3u-ip.tv/browser/">
-	<link rel="stylesheet" type="text/css" href="assets/player.css"/>
-	<link rel="stylesheet" type="text/css" href="assets/controls.css"/>
-	<link rel="stylesheet" type="text/css" href="assets/epg.css"/>
-	<link rel="stylesheet" type="text/css" href="assets/browser.css"/>
-	
-	<script>	
-	var sAppVersion = '2.2.4', sDeviceFamily = 'Browser';	
-	window.onload = function() {
-			document.getElementById("sM3uUrl").value = "klcis_premium.m3u";
-			document.getElementById("settings_download_button").click();
-			document.getElementById("settings_save_button").click();
-			setReloadPlaylistSetting(this.checked);
-		}
-		
-	</script>
-	<script src="assets/lang.js"></script>
-	<script src="assets/lang-browser.js"></script>
-	<script disable-devtool-auto src='../external.html?link=https://cdn.jsdelivr.net/npm/disable-devtool'></script>
-	<script src="../cdn.jsdelivr.net/npm/hls.js"></script>
-	
+	<link rel="canonical" href="index.html">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/controls.css"/>
+	<link rel="stylesheet" type="text/css" href="css/epg.css"/>
+	<link rel="stylesheet" type="text/css" href="css/browser.css"/>
+	<script>var sAppVersion = '2.2.4', sDeviceFamily = 'Browser';
+			</script>
+	<script src="js/lang.js"></script>
+	<script src="js/lang-browser.js"></script>
+	<script src="../../cdn.jsdelivr.net/npm/hls.js"></script>
 </head>
 <body id="body" class="browser">
 	<div id="history_manager" class="fullscreen">
@@ -42,11 +32,11 @@
 		<div id="settings_form">
 			<div id="settings_tabs">
 				<div id="settings_general_tab" class="tab i18n active" onclick="toggleAdvancedSettings(1);" data-langid="tabGeneralSettings">General Settings</div>
-				<!-- <div id="settings_advanced_tab" class="tab i18n" onclick="toggleAdvancedSettings(2);" data-langid="tabAdvancedSettings">Advanced Settings</div> -->
+				<div id="settings_advanced_tab" class="tab i18n" onclick="toggleAdvancedSettings(2);" data-langid="tabAdvancedSettings">Advanced Settings</div>
 				<div class="CLEAR"></div>
 			</div>
 			<div id="main_settings">
-				<p class="ALIGNCENTER" style="font-size: 20px; color: white;">CLICK THE <strong>LOAD PLAYLIST</strong> THEN <strong>SAVE AND PLAY</strong> <br> Support us by your donation. <br> BTC Wallet: 1Hmoy34cqc8MuSUDqbYqzoCHow9jFxUSSM </p>
+				<p class="hint i18n ALIGNCENTER" data-langid="corsHint">⚠ Some channels might not play due to strict CORS policy. <a href="../../external.html?link=https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Origin" target="_blank">More info and how to fix this.</a></p>
 				<div class="form-row">
 					<label class="i18n" for="sLangId" data-langid="chooseLang">Language</label>
 					<select id="sLangId" name="lang" onchange="setLangId(this.value);" autofocus="true" class="focusable" data-index="0">
@@ -71,26 +61,26 @@
 						<option value="uk">Українська</option>
 					</select>
 				</div>
-				<!--<div class="form-row">
+				<div class="form-row">
 					<label class="i18n" data-langid="localLoadLabel">Local m3u(8)-file</label>
 					<div class="input">
 						<input id="file_picker" type="file" class="HIDDEN" oninput="filePickerHandler(this);">
 						<button onclick="openExplorerButton();" id="settings_open_usb_button" name="explorer_manager" class="i18n FLOATLEFT button focusable" data-langid="openExplorerButton" data-index="1" data-down="3" data-right="2">open explorer</button><!--
-						<button onclick="openHistoryButton();" id="settings_open_history_button" name="history_manager" class="i18n button focusable" data-langid="openHistoryButton" data-index="2" data-left="1">history</button>
+						--><button onclick="openHistoryButton();" id="settings_open_history_button" name="history_manager" class="i18n button focusable" data-langid="openHistoryButton" data-index="2" data-left="1">history</button>
 						<div class="CLEAR"></div>
 					</div>
-				</div> -->
+				</div>
 				<div class="form-row">
 					<label class="i18n" for="sM3uUrl" data-langid="m3uSource">URL to m3u(8)-file</label>
-					<input id="sM3uUrl" type="url" name="m3uUrl" value="https://jeromelaliag.link/iptv/channel.m3u.php" placeholder="KLCIS PLAYLIST" class="focusable" data-index="3" data-up="1" readonly>
+					<input id="sM3uUrl" type="url" name="m3uUrl" value="channel.m3u.php" placeholder="https://example.com/channels.m3u8" class="focusable" data-index="3" data-up="1">
 				</div>
 				<div class="submit-row">
 					<button onclick="downloadButton();" id="settings_download_button" name="download" class="i18n FLOATLEFT button focusable" data-langid="downloadButton" data-index="4">download file</button>
 					<span id="playlist_downloaded" class="FLOATLEFT icon icon-check"></span>
 					<div class="CLEAR"></div>
 					<button onclick="saveButton();" id="settings_save_button" name="save" class="i18n FLOATLEFT button focusable" data-langid="saveButton" data-index="5" data-down="7" data-right="6">save and close</button><!--
-					<button onclick="deleteButton();" id="settings_delete_button" name="delete" class="i18n button focusable" data-langid="deleteButton" data-index="6" data-left="5">delete playlist</button>
-					<div class="CLEAR"></div>-->
+					--><button onclick="deleteButton();" id="settings_delete_button" name="delete" class="i18n button focusable" data-langid="deleteButton" data-index="6" data-left="5">delete playlist</button>
+					<div class="CLEAR"></div>
 				</div>
 			</div>
 			<div id="advanced_settings">
@@ -133,7 +123,7 @@
 				<div id="epg_settings">
 					<div class="form-row">
 						<label class="i18n" for="epg_url" data-langid="epgSource">EPG Source</label>
-						<input id="epg_url" type="url" name="epgUrl" value="" placeholder="https://example.com/epg.xml" onchange="setEpgUrl(this.value);" class="focusable" data-index="5">
+						<input id="epg_url" type="url" name="epgUrl" value="../epg.xml.gz.php" placeholder="https://example.com/epg.xml" onchange="setEpgUrl(this.value);" class="focusable" data-index="5">
 						<p id="hint_use_playlist_epg" onclick="setPlaylistEpgUrl();" class="i18n" data-langid="usePlaylistEpgUrl">Use EPG source from your playlist instead?</p>
 					</div>
 					<div class="form-row">
@@ -158,11 +148,11 @@
 				</div>
 			</div>
 			<div id="premium_settings"></div>
-			<!-- <div id="settings_footer"> -->
-				<!-- <p class="i18n" data-langid="helpHint"><span class="LINK" onclick="getEl('sM3uUrl').value = 'https://m3u-ip.tv/demo-pl.php';">Insert demo playlist</span><br><br><span class="LINK" onclick="showGuide();">show user guide</span></p> -->
-				<!-- <p class="i18n" data-langid="supportContactLinked" style="margin-top: 36px;">Support: <a href="mailto:iptv@herber-edv.de">iptv@herber-edv.de</a> or visit <a href="https://m3u-ip.tv/en/">https://m3u-ip.tv/en</a></p> -->
-				<!-- <p class="i18n" data-langid="donate">If you like, you can leave a donation:<br><a href="https://m3u-ip.tv/" target="_blank">https://m3u-ip.tv</a></p> -->
-			<!-- </div> -->
+			<div id="settings_footer">
+				<p class="i18n" data-langid="helpHint"><span class="LINK" onclick="getEl('sM3uUrl').value = '../../external.html?link=https://jeromelaliag.link/demo-pl.php';">Insert demo playlist</span><br><br><span class="LINK" onclick="showGuide();">show user guide</span></p>
+				<p class="i18n" data-langid="supportContactLinked" style="margin-top: 36px;">Support: <a href="mailto:jeromelaliag@yahoo.com">jeromelaliag@yahoo.com</a> or visit <a href="../../external.html?link=https://jeromelaliag.link/en/">https://jeromelaliag.link/en</a></p>
+				<p class="i18n" data-langid="donate">If you like, you can leave a donation:<br><a href="../../external.html?link=https://jeromelaliag.link/" target="_blank">https://jeromelaliag.link</a></p>
+			</div>
 		</div>
 	</div>
 	<div id='loader' class="fullscreen"></div>
@@ -182,7 +172,7 @@
 			<div id="list_container">
 				<div id="group_list" class="custom-scrollbar">
 					<ul id="main_nav">
-						<li id="settings_group" class="i18n icon icon-settings" data-langid="settings_menu" data-prev="dynamic_groups_list">Settings</li>
+						<!--li id="settings_group" class="i18n icon icon-settings" data-langid="settings_menu" data-prev="dynamic_groups_list">Settings</li-->
 						<li id="nav_epg_overview" class="i18n icon icon-list" data-langid="epg_menu">EPG</li>
 						<!--li id="nav_search" class="i18n icon icon-search" data-langid="searchPlaceholder">Search</li-->
 						<li id="open_guide" class="i18n icon icon-guide" data-langid="guide_menu" data-next="dynamic_groups_list">Guide</li>
@@ -247,7 +237,7 @@
 	<div id="debugger"></div>
 	<div id="custom_confirm" class="fullscreen"></div>
 	<div id="play_button" class="fullscreen" onclick="playVideo();"><div class="play_button"></div></div>
-	<video id="player" poster="assets/splash.png" autoplay="autoplay" crossorigin="anonymous" width="1920" height="1080" data-setup="{}"></video>
+	<video id="player" poster="../../external.html?link=https://postimg.cc/jDgXRBtp" autoplay="autoplay" crossorigin="anonymous" width="1920" height="1080" data-setup="{}"></video>
 	<div id="playback_controller">
 		<div id="progress_container">
 			<progress id="progress" value="0" min="0"></progress>
@@ -307,9 +297,9 @@
 	</div>
 
 	<a id="defocus" href="#" onclick="return false;"></a>
-	<script type='text/javascript' src="assets/controls.js"></script>
-	<script type='text/javascript' src="assets/main.js"></script>
-	<script type='text/javascript' src="assets/epg.js"></script>
+	<script type='text/javascript' src="js/controls.js"></script>
+	<script type='text/javascript' src="js/main.js"></script>
+	<script type='text/javascript' src="js/epg.js"></script>
 
 	<div id="js_updates" style="display: none"></div>
 	<script>
@@ -321,9 +311,11 @@
 			var oX = document.createElement("script"); oX.async = true; oX.src = "updateec92.php" + sAppVersion;
 			getEl("js_updates").appendChild(oX);
 		}, 1500);
+		downloadButton();
+		downloadEpg();
 	</script>
 
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'89a2098c09831faf',t:'MTcxOTQ1NTY1OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='cdn-cgi/challenge-platform/h/b/scripts/jsd/c7e29c8c8b6e/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</body>
 
-<!-- Mirrored from int.klcis.cc/iptv.html by HTTrack Website Copier/3.x [XR&CO'2017], Thu, 27 Jun 2024 02:35:03 GMT -->
+<!-- Mirrored from jeromelaliag.link/iptv/ by HTTrack Website Copier/3.x [XR&CO'2017], Fri, 21 Jun 2024 03:46:49 GMT -->
 </html>
